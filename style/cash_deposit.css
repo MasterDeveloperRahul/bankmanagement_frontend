@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url(../images/bg\ \(3\).jpg);
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    max-width:fit-content;
+    margin: auto; 
+}
+
+.head{
+    background:url("../images/head2.jpg");
+    width: 1585px;
+    height: 200px;
+    margin-left: 5px;
+}
+
+#logout{
+    position:absolute;
+    border: none;
+    width: 120px;
+    height: 120px;
+    background: url(../images/log_out2.jpg);
+    background-size: cover;
+    top: 15px;
+    right: 20px;
+}
+
+.center{
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 440px;
+    width: 700px;
+    background-color: rgba(240, 249, 251, 0.815);
+    border-radius: 10px;
+}
+
+fieldset{
+    border: 3px solid goldenrod;
+    border-radius: 20px;
+}
+
+legend{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: rgb(36, 54, 219);
+}
+
+label{
+    font-size: 18px;
+    color: rgb(153, 18, 18);
+    font-weight: 700;
+}
+
+table td{
+    padding:12px 0px 10px 12px;
+}
+
+input[type="text"]{
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: seashell;
+    color: black;
+    text-transform: uppercase;
+    width: 90%;
+    height: 24px; 
+}
+ 
+img{
+    border: 2px solid goldenrod;
+    background-color: honeydew;
+}
+
+input[type="file"]{
+font-display: none;
+display: block;
+}
+
+input[type="number"]{
+    height: 35px;
+    width: 150px;
+    font-size: 25px;
+    background-color: rgb(46, 45, 45);
+    color: whitesmoke;
+    font-weight: 700;
+    border: 1px solid whitesmoke;
+}
+
+input[type="submit"]{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color: turquoise;
+    border-radius: 25px;
+}
+
+input[type=button]{
+    width: 250px;
+    height: 50px;
+    background-color: tomato;
+    font-size: 20px;
+    font-weight: 600;
+    color: cornsilk;
+    border-radius: 25px;
+}
+
+button:hover, button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 5px 2px grey;
+    cursor:pointer
+}
+
+input[type=button]:hover, input[type=button]:focus, input[type=submit]:hover, input[type=submit]:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 5px 2px grey;
+    cursor:pointer
+}
+
+a{
+    font-size: 25px;
+}
+  

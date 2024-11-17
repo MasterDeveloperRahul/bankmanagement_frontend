@@ -1,0 +1,194 @@
+*{
+margin: 0;
+padding: 0;
+}
+/* Body Part */
+.content {
+  position: relative;
+  max-width:fit-content;
+  margin: auto;
+  width: 1585px;  
+  }
+
+  /* Page Header */
+.head{
+  background:url("../images/head2.jpg");
+  /*width: 1585px;*/
+  height: 200px;
+  margin-left: 5px;
+}
+
+/* Logout Button */
+#logout{
+  position: absolute;
+  border: none;
+  width: 120px;
+  height: 120px;
+  background: url(../images/log_out2.jpg);
+  background-size: cover;
+  top: 15px;
+  right: 20px;
+}
+
+/* Scrolling Text Bellow Header */
+.animate{
+  width: 1576px;
+}
+
+marquee, pre{
+  color: red;
+  text-shadow: 2px black;
+  font-size: 25px;
+  font-weight: 900;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  animation:blinker 0.8s infinite;
+}
+
+@keyframes blinker{
+  10%{  color: red; }
+  60%{ color: blue; } 
+  100%{ color: orange}
+}
+
+/* Bank Dashboard */
+fieldset{
+  padding: 10px;
+  width: fit-content;
+  border: 3px solid rgb(17, 67, 233);
+  border-radius: 5px;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+legend{
+  text-align: center;
+  color: rgb(236, 31, 65);
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px solid rgb(17, 67, 233);
+  border-radius: 5px;
+  padding:0 10px;
+}
+
+table td{
+  width: 100px;
+  height: 100px;
+  table-layout: fixed;
+}
+
+table{
+  border-spacing: 6px;
+  width: 20%;
+}
+
+button{
+  width: 300px;
+  height: 155px;
+  border-radius: 15px;  
+}
+
+button:hover, button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    box-shadow: 5px 5px 2px grey;
+    cursor:pointer
+  }
+  
+#account_creat{
+  background: url(../images/icon/Slide1.JPG);
+  background-size: cover;
+}
+
+#update{
+  background: url(../images/icon/Slide2.JPG);
+  background-size: cover;
+}
+
+#show_accounts{
+  background:url(../images/icon/Slide3.JPG);
+}
+
+#withdrawal{
+  background: url(../images/icon/Slide4.JPG);
+  background-size: cover;
+}
+
+#deposit{
+  background: url(../images/icon/Slide5.JPG);
+  background-size: cover;
+}
+
+#transfer{
+  background: url(../images/icon/Slide6.JPG);
+  background-size: cover;
+}
+
+#approvls{
+  background: url(../images/icon/Slide7.JPG);
+  background-size: cover;
+}
+
+#services{
+  background: url(../images/icon/Slide8.JPG);
+  background-size: cover;
+}
+
+#technical_suppurt{
+  background: url(../images/icon/Slide9.JPG);
+  background-size: cover;
+}
+
+/* Left Image Slider */
+marquee img{
+height: 400px;
+width: 600px;
+background-size: cover;}
+
+.slide_show marquee{
+  position: absolute;
+  border: 2px solid pink;
+  width: 600px;
+  height: 530px;
+  top: 255px;
+  right: 5px;
+  background-repeat: no-repeat;
+}
+
+/* Page Footer */
+.footer{
+  background-color: rgb(11, 11, 119);
+  width: 99.5%;
+  height: 200px;
+  margin: 80px auto 40px auto;
+}
+
+#footer{
+  width:97%;
+  margin: 0 20px; 
+} 
+
+#univesity_info{
+  font-size: 18px;
+}
+
+#logo{
+  border-radius: 15px;
+ }
+
+.footer table th{
+  color: goldenrod;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+}
+
+.footer table td{
+  color: white;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  vertical-align: top;  
+}
+

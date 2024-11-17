@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Bank Dashboard
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cash_withdrawal.css">
+    <script>
+      // Scrip for Alert
+      function showalert() {
+        var newLine = "\r\n"
+        var msg = "Page not connected to server !!!!"
+        msg += newLine;
+        msg += "This is a Proto-type project !!!!";
+        msg += newLine;
+        msg += "Please proceed with any value";
+        msg += newLine;
+        msg += "Example: Don't click on Search (Account No.= 12345 → Amount=>500 → 'whithdrawal')";
+        alert(msg);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Page header -->
+      <div class="head"></div>
+      <!-- Logout Button -->
+      <div class="logout">
+          <a href="HOME_PAGE.html"><button name="" id="logout"></button></a> 
+      </div>
+      <div class="center">
+        <form method="POST"  action="transaction_successful.html">
+          <fieldset>
+            <legend>Cash Withdrawal</legend>
+            <table>
+              <tr height="30px">
+                <td>
+                  <input type="text" name="account_no" id="#" placeholder="Enter Account Number" required size="35"></td>
+                <td>
+                  <!-- Search Button -->
+                  <input type="button" name="search" value="Search" id="#" size="27" onclick="showalert();">
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                  <input type="text" name="name" id="#" placeholder="Customer Name" disabled ><br><br><br> 
+                  <label>Available Amount (In Rupees) :</label><input type="number" name="amount" placeholder="₹" disabled>
+                </td>
+                <td>
+                  <img id="photo-preview" src="../images/default_photo.png" width="100" height="120" > 
+                  <br><br>
+                  <img id="sign-preview" src="../images/default_sign.png" width="120" height="50"> 
+
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <label>Amount to be Whithdrawal: </label></td>
+                  <td>
+                    <input type="number" name="amount" min="500" required>
+                  </td>
+              </tr>
+              <tr style="height: 100px;">
+                <td>
+                  <!-- Submit Button -->
+                  <input type="submit" name="submit" value="Whithdrawal">
+                </td>
+                <td>
+                  <!-- Cancel Button -->
+                  <a href="BANK_DASHBOARD.html"><input type="button" name="cancel" value="Cancel"></a>
+                </td>
+              </tr>
+              <tr>
+                <!-- Help Button -->
+                <td colspan="2" align="center">
+                  <a href="help4.html">Help!</a>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+/* CSS Used in Home Page */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Page header */
+.head{
+    background:url("../images/head.jpg");
+    width: 1575px;
+    height: 200px;
+    margin-left: 5px;
+}
+
+/* Navigation Bar */
+.nav{  
+    background-color: #12a8e0;
+    text-align: left;
+    height: 36px;
+    margin: 5px 18px 5px 13px;
+    border-radius:  15px;
+    width: 1562px;
+    }
+
+.nav ul{
+    margin:0;
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.nav ul li{
+    padding: 0 77px;
+    border-right: 2px solid white;
+}
+
+.nav ul li:last-child{
+    border:none;
+}
+
+.account:last-child{
+    border-radius: 0px 0px 25px 25px;
+ }
+
+ .account ul li:last-child{
+    border-radius: 0px 0px 25px 25px;
+ }
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+.account{
+    display: none;   
+}
+
+.account ul li{
+    border: none;
+    margin: 0; 
+    border-bottom: .75px solid oldlace;
+}
+
+.nav ul li:hover .account{
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    background-color:#2800719a;
+    margin-left: -40px;
+}
+
+
+.nav ul li:hover .account ul{
+    display: block;
+    margin: 5px;
+}
+
+li:hover:first-child{
+    background-color: #280071;
+    border-radius: 14px 0 0 14px;
+}
+
+li:hover{
+    background-color: #280071;
+    border-radius: 0px;
+}
+
+li:hover:last-child{
+    background-color: #280071;
+    border-radius: 0 14px 14px 0;
+}
+
+.nav ul li:hover a {
+    font-style: italic;
+}
+
+/* Left Slide Show */
+.slide_left{
+  
+    width: 320px;
+    height: auto;
+    background-color: cornsilk;
+    border: 2px solid gold;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: -568px;
+    padding: 25px 25px;
+    text-align: justify;
+}
+
+/* Giving scolling effect of Left Slide Show */
+marquee{
+    height: 380px;
+}
+
+.slide_left p{
+   text-align: center;
+   text-decoration: underline;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 700;
+   color: rgb(0, 44, 187);
+   margin-bottom: 30px;
+}
+
+#points li{
+   font-size: 18px;
+   color: red;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   pointer-events: none;
+   text-align: justify;  
+}
+
+/* Box Behind Bank Login Button */
+.box1{
+   position: absolute;
+    width: 280px;
+    height: auto;
+    border: 2px solid gold;
+    border-radius: 0px 25px;
+    left: 1260px;
+    margin-top: -210px;
+    padding: 10px 15px;
+    text-align: justify;  
+}
+
+
+.box1 h3{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    color: gold;
+    margin-bottom: 5px;   
+}
+
+p{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(139, 21, 21);
+    font-size: 17px;
+}
+
+
+/* Center Slide Show */
+.slide_center{
+    width: 800px;
+    height: 500px;
+    margin: 15px 400px;
+    padding: 25px;
+    border: 2px solid black ;
+    border-radius: 5px;
+    background: url("../images/slide1/Slide1.JPG")  no-repeat ;
+    background-size: cover;
+    animation: slide 25s infinite;
+}
+
+@keyframes slide{
+    10%{
+        background: url("../images/slide1/Slide1.JPG")  no-repeat ;
+        background-size: cover;  
+    }
+    20%{
+        background: url("../images/slide1/Slide2.jpeg")  no-repeat ;
+        background-size: cover;  
+        }
+    30%{
+        background: url("../images/slide1/Slide3.JPG")  no-repeat ;
+        background-size: cover;  
+    }
+    40%{
+        background: url("../images/slide1/Slide4.JPG")  no-repeat ;
+        background-size: cover;  
+    }
+    50%{
+        background: url("../images/slide1/Slide5.JPG")  no-repeat ;
+        background-size: cover;
+    }
+    60%{
+        background: url("../images/slide1/Slide6.JPG")  no-repeat ;
+        background-size: cover;   
+    }
+    70%{
+        background: url("../images/slide1/Slide7.JPG")  no-repeat ;
+        background-size: cover;  
+    }
+    80%{
+        background: url("../images/slide1/Slide8.JPG")  no-repeat ;
+        background-size: cover; 
+    }
+    90%{
+        background: url("../images/slide1/Slide9.JPG")  no-repeat ;
+        background-size: cover; 
+    }
+    100%{
+        background: url("../images/slide1/Slide10.JPG")  no-repeat ;
+        background-size: cover; 
+    }
+}
+
+/* Bank Login Button */
+.bank_login{
+    position: absolute;
+    background-color: cyan;
+    background: url("../images/m1.png") no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 320px;
+    top: 260px;
+    margin-left: 1295px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-position:center;
+}
+
+.bank_login p{
+    background-color:whitesmoke;
+    margin-top: -45px;
+    color: teal;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* Pop_Up */
+    #pop{
+        width: 525px;
+        height: 742px;
+        top: 3%;
+        bottom: 5%;
+        right: 35%;
+        background:url("../images/Pop_Page.jpg") no-repeat;
+        background-size: cover;
+        position: fixed;
+        -webkit-box-shadow: -1px 1px 5px 1000px rgba(168, 173, 172, 0.87);
+        -moz-box-shadow: -1px 1px 5px 1000px rgba(168, 173, 172, 0.87);
+        box-shadow: -1px 1px 5px 1000px rgba(168, 173, 172, 0.87);
+    }
+
+    #close{
+        float: right;
+        margin: 5px 5px 0 0;
+        background-color:rgba(0, 0, 0, 0.787);
+        border: none;
+        font-weight: 700;
+        color:    white;
+        font-size: larger;
+    }
+
+/* Page Footer */
+ .footer{
+    background-color: rgb(11, 11, 119);
+    width: 1575px;
+    height: 200px;
+    margin: 80px auto 40px 5px;
+  }
+
+  #footer{
+    width:97%;
+    margin: 0 20px;
+  }
+
+  #univesity_info{
+    font-size: 18px;
+  }
+
+  #logo{
+    border-radius: 15px;
+   }
+  
+  .footer table th{
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .footer table td{
+    color: white;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    vertical-align: top;  
+  }
+  

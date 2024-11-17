@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bank Login Pannel    
+        </title>
+        <link rel="stylesheet" href="../style/bank_login_panel.css">
+        <script>
+            // Script For ID & Password Validation
+            function login(){
+                    var un=document.forms["bank_login"]["uname"].value;
+                    var pw=document.forms["bank_login"]["pass"].value;
+                    if (un=="pbi" && pw=="rahul")
+                {
+                    window.location.href="BANK_DASHBOARD.html";
+                    document.forms["bank_login"]["uname"].value="";
+                    document.forms["bank_login"]["pass"].value="";
+                }
+                else
+                {
+                    alert("Invalid username or Password")  
+                }
+            }
+
+            function cancel(){
+                window.location.href="HOME_PAGE.html"; 
+            }
+       </script>
+    </head>
+    <body>
+        <div class="top"></div>
+        <div class="pannel">
+            <div class="forms">
+               <form name="bank_login" method="POST">
+                   <div class="lp"><p>Login Pannel</p></div>
+                    <!-- For Input Username -->
+                    <div class="input"><input type="text" name="uname" id="" placeholder="Username" required>
+                    <!-- For Input Password -->
+                    <input type="password" name="pass" id="" placeholder="Password" required></div>
+                    <div class="submit">
+                        <!-- Submit & Cancel Button -->
+                        <button type="submit" onclick="login()">Login</button>
+                        <button type="button" onclick="cancel()"> Cancel</button>
+                    </div>
+                    <br><br>
+                    <!-- For Help Panel -->
+                    <div class="help">
+                        Don't Have Username & Password <br>
+                        <a href="help2.html">Help!</a>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </body>
+</html>

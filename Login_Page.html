@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TItle>
+            LOGNI FORM
+        </TItle>
+        <link rel="stylesheet" href="style/admin_login.css  ">
+        <script>
+            // Script For ID & Password Validation
+            function myFunction()
+            {
+                var un=document.forms["myform"]["uname"].value;
+                var pw=document.forms["myform"]["pass"].value;
+                if (un=="1916031" && pw=="rahul")
+                { 
+                    window.location.href="pages/HOME_PAGE.html";
+                    document.forms["myform"]["uname"].value="";
+                    document.forms["myform"]["pass"].value=""; 
+                }
+                else
+                {
+                    alert("Invalid username or Password")  
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="center">
+                <h1>Admin Login</h1>
+                <form name="myform" method="POST">
+                    <!-- For Input Username -->
+                    <div class="inp">
+                        <input type="text" name="uname" id="#" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <!-- For Input Password -->
+                    <div class="inp">
+                        <input type="password" name="pass" id="#" required>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+                    <!-- For Help Panel -->
+                    <div class="help">  
+                        Don't Have username & Password - <a href="pages/help1.html">Help!</a>
+                        <!-- Submit Button -->
+                        <input type="button" name="submit" value="Submit"  onclick="myFunction()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

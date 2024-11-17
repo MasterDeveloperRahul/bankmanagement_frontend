@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+        Open New Account
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/open_new_account.css">
+    <script>
+      // Show Image Preview      
+      function showPreviewOne(event){
+        if(event.target.files.length > 0){
+          let src = URL.createObjectURL(event.target.files[0]);
+          let preview = document.getElementById("photo-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        } 
+      }
+      function showPreviewTwo(event){
+        if(event.target.files.length > 0){
+          let src = URL.createObjectURL(event.target.files[0]);
+          let preview = document.getElementById("sign-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        } 
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main">
+    <!-- Page Header -->
+    <div class="head"></div>
+      <!-- Logout Button -->
+      <div class="logout">
+          <a href="HOME_PAGE.html"><button name="" id="logout"></button></a> 
+      </div>
+      <div class="center">
+        <!-- Registration Form -->
+        <form method="POST" action="account_creation_successful.html">
+          <fieldset>
+            <legend> New Account Opening Form</legend>
+            <table>
+              <colgroup>
+                <col style="width: 160px;;">
+                <col style="width: 60px; text-align: center;">
+              </colgroup>
+              <tr height="30px">
+                <!-- Input for Name -->
+                <td><label>Name</label></td><td>:</td>
+                <td><p>First Name</p>
+                  <input type="text" name="first_name" id="#" placeholder="Enter First Name" required size="27"></td> 
+                <td>
+                  <p>Middle Name</p>
+                  <input type="text" name="middle_name" id="#" placeholder="Enter Middle Name" size="27">
+                </td>
+                <td>
+                    <p>Last Name</p>
+                    <input type="text" name="last_name" id="#" placeholder="Enter Last Name" required size="27"> 
+                </td>
+              </tr>
+              <tr>
+                <!-- Input for Father' Name -->   
+                <td><label>Father's Name</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="text" name="fathers_name" id="#" placeholder="Enter Father's Name" required size="40">
+                </td>
+              <tr>                
+                <td>
+                  <!-- Input for Gender -->
+                  <label>Gender</label>
+                </td><td>:</td>
+                <td colspan="3">
+                  <input type="radio" name="gender" id="Male" required>
+                  <span id="male">Male</span>
+                  &nbsp;&nbsp;
+                  <input type="radio" name="gender" id="Female" VA required>
+                  <span id="female">Female</span>
+                </td>
+              </tr>
+              <tr>
+                <!-- Input for DOB -->
+                <td><label> Date Of Birth</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="date" name="dob" id="" placeholder=""  required max="2003-01-01" min="1950-01-01"></td> 
+              </tr>
+              <tr>
+                <!-- Input for Aadhar No. -->
+                <td><label>Aadhar Number</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="text" name="doc_no" id="aadhar" placeholder="Enter Aadhar Number" maxlength="12" minlength="12" required size="35"></td>
+              </tr>
+              <tr>
+                <!-- Input for PAN No. -->
+                <td><label>PAN Number</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="text" name="doc_no" id="panr" placeholder="Enter PAN Number" maxlength="10" minlength="10" required size="35">
+                </td>
+              </tr>
+              <tr>
+                <!-- Input for Mobile No. -->
+                <td><label>Mobile Number</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="text" name="doc_no" id="panr" placeholder="Enter Mobile Number" maxlength="10" minlength="10" required size="35">
+                </td>
+              </tr>
+              <tr>
+                <!-- Input for Address. -->
+                <td><label>Address</label></td><td>:</td>
+                <td colspan="3">
+                  <input type="text" name="adress" id="adress" placeholder="Enter Full Address" required size="95">
+                </td>
+              </tr>
+              <br><br>
+              <tr>
+                <!-- For photo & Sign. Upload -->
+                <td><label>Upload Photograph</label></td><td>:</td>
+                <td class="photograph" colspan="2"><label for="photo">
+                  <img id="photo-preview" src="../images/default_photo.png" width="100" height="120" > 
+                  </label>
+                  <input type="file"  name="img_one" id="photo" accept="image/*" required onchange="showPreviewOne(event);">
+                </td>
+              </tr>
+              <tr>
+                <td ><label>Upload Signature</label></td><td>:</td>
+                <td colspan="2"><label for="sign">
+                  <img id="sign-preview" src="../images/default_sign.png" width="120" height="50">
+                  </label>
+                  <input type="file"  name="img_one" id="sign" accept="image/*" required onchange="showPreviewTwo(event);">
+                </td>
+              </tr>
+              <!-- Nominee Details -->
+              <tr style="height: 100px;">
+                <td><label> Add Nominee</label></td><td>:</td>
+                <td colspan="2">
+                  <input type="text" name="nominee" id=""placeholder="Enter Nominee Name"  size="50" required></td>
+                <td>
+                  <select name="relation" id="" required>
+                    <option value=""> --Select Relation--</option>
+                    <option value="1"> Spouse</option>
+                    <option value="2"> Father</option>
+                    <option value="3"> Mother</option>
+                    <option value="4"> Brother</option>
+                    <option value="5"> Others</option>
+                </select></td>
+              </tr>
+              <!-- Deposit Amount Input -->
+              <tr style="height: 80px;">
+                <td><label> Deposit Amount </label></td><td>:</td>
+                <td>
+                  <input type="number" name="amount" min="500" required>
+                </td>
+              </tr>
+              <tr style="height: 200px;">
+                <td></td>
+                <!-- Submit Button -->
+                <td colspan="2">
+                  <input type="submit" name="submit" value="Submit">
+                </td>
+                <!-- Cancel Button -->
+                <td colspan="2">
+                  <a href="BANK_DASHBOARD.html"><input type="button" name="cancel" value="Cancel"></a>
+                </td>
+              </tr>
+            </table>   
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

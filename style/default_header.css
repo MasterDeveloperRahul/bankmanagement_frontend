@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+
+.head{
+    background:url("../images/head.jpg");
+    width: 1575px;
+    height: 200px;
+    margin-left: 5px;
+}
+
+.nav{
+    
+background-color: #12a8e0;
+text-align: left;
+height: 36px;
+margin: 5px 18px 5px 13px;
+border-radius:  15px;
+width: 1562px;
+}
+
+.nav ul{
+    margin:0;
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.nav ul li{
+padding: 0 77px;
+border-right: 2px solid white;
+}
+
+.nav ul li:last-child{
+border:none;
+}
+
+
+
+.account:last-child{
+    border-radius: 0px 0px 25px 25px;
+ }
+ .account ul li:last-child{
+    border-radius: 0px 0px 25px 25px;
+ }
+
+
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+.account{
+    display: none;   
+}
+
+.account ul li{
+    border: none;
+    margin: 0; 
+    border-bottom: .75px solid oldlace;
+}
+
+
+
+.nav ul li:hover .account{
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    background-color:#2800719a;
+    margin-left: -40px;
+}
+
+
+
+.nav ul li:hover .account ul{
+    display: block;
+    margin: 5px;
+}
+li:hover:first-child{
+    background-color: #280071;
+    border-radius: 14px 0 0 14px;
+    }
+li:hover{
+background-color: #280071;
+border-radius: 0px;
+}
+
+
+
+ li:hover:last-child{
+        background-color: #280071;
+        border-radius: 0 14px 14px 0;
+        }
+    
+
+.nav ul li:hover a {
+    font-style: italic;
+
+}

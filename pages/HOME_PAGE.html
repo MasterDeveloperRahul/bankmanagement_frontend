@@ -1,0 +1,134 @@
+<!-- Home Page -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+            <!-- External CSS is Used -->
+        <link rel="stylesheet" href="../style/HOME_PAGE.css">
+    </head>
+    <body>
+
+        <!--Page Header-->
+        <div class="head"></div>
+
+        <!--Navigation Bar-->
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Account</a>
+                    <div class="account">
+                        <ul>
+                        <li><a href="savings_account.html">Savings</a></li>
+                        <li><a href="current_account.html">Current</a></li>
+                        <li><a href="salary_account.html">Salary</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Loan</a>
+                    <div class="account">
+                        <ul>
+                            <li><a href="home_loan.html">Home</a></li>
+                            <li><a href="auto_loan.html">Auto</a></li>
+                            <li><a href="agriculture_loan.html">Agricultute</a></li>
+                            <li><a href="gold_loan.html">Gold</a></li>
+                            <li><a href="education_loan.html">Education</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Deposit</a> 
+                    <div class="account">
+                        <ul>
+                            <li><a href="reccuring_deposit.html">Reccuring</a></li>
+                            <li><a href="fixed_deposit.html">Fixed</a></li>
+                            <li><a href="flexi_deposit.html">Flexi</a></li>
+                            <li><a href="annuity_deosit.html">Annuity</a></li>
+                            <li><a href="taxsaving_deposit.html">Tax Savings</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Services</a>
+                    <div class="account">
+                        <ul>
+                            <li><a href="netbanking_services.html">Net-banking</a></li>
+                            <li><a href="atm_services.html">ATM Card</a></li>
+                            <li><a href="credit_services.html">Credit Card</a></li>
+                            <li><a href="cheque_services.html">Cheque Book</a></li>
+                            <li><a href="sms_services.html">SMS Alert</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../pages/about_us.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </div>
+        </div>
+
+        <!-- Center Slide Show -->
+        <div class="slide_center"></div>
+
+        <!-- Left Slide Show -->
+        <div class="slide_left">
+            <p style="font-size: 22px;">||Importent Notice||</p>
+            <p style="font-size: 21px;">Prevent The Spread of COVID-19</p>
+            <marquee behavior="scroll" scrollamount="5" direction="up">
+                <ul id="points">
+                    <li><img src="../images/hp_marquee1.jpg" style="height: 200px; width: 320px; border-radius: 10px;"></li><br><br>
+                    <li>*<span>your hands often. Use soap and water, or an alcohol-based hand rub.</span></li><br><br>
+                    <li>*<span>Maintain a safe distance from anyone who is coughing or sneezing.,</span></li><br><br>
+                    <li>*<span>Wear a mask when physical distancing is not possible.</span></li><br><br>
+                    <li>*<span>Don’t touch your eyes, nose or mouth.</span></li><br><br>
+                    <li>*<span>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</span></li><br><br>
+                    <li>*<span>Stay home if you feel unwell.</span></li><br><br>
+                    <li>*<span>If you have a fever, cough and difficulty breathing, seek medical attention.</span></li><br><br>
+                    <li><img src="../images/hp_marquee2.jpg" style="height: 200px; width: 320px; border-radius: 10px;"></li>
+                </ul>
+            </marquee>
+        </div>
+        
+        <!-- Box Behind Bank Login Button -->
+        <div class="box1">
+            <h3>Our Motive</h3>
+            <P >
+                The main objective of bank management is to build organic and optimal system of interaction between the elements of banking mechanism with a view to profit.
+                <br><br>
+                Successful optimization of the "profitability-risk" ratio in a bank.
+            </P>
+        </div>
+        <!-- Bank Login Button -->
+        <div class="bank_login" >
+            <form method="POST" action="bank_login_panel.html">
+            <input type="image" src="error.src" width="250px" height="320px" onerror="this.style.opacity='0'"/> 
+            <p>BANK LOGIN</p>
+            </form>
+        </div>
+        
+        <!-- Pop_Up -->
+        <div id="pop">
+            <button id="close" onclick="document.getElementById('pop').style.display='none'" style="cursor: pointer;">&nbsp;X&nbsp;</button>
+        </div>
+
+        <!-- Page Footer -->
+        <div class="footer">
+            <table id="footer">
+                <colgroup>
+                    <col style="width: 500px;">
+                    <col style="width: 500px;">
+                </colgroup>
+                <tr>
+                    <th> In Guiedance of - </th>
+                    <th>Design & Developed By -</th>
+                    <th>Institution -</th></tr>
+                <tr>
+                    <td>Neha Tripathi <br><span style="font-size: 18px;">Department of Computer Science</span></td>
+                    <td>Rahul Kumar Sah<br> <span style="font-size: 18px;"> M.Sc. [Computer Science]<br>Final Year[IV Sem] - 1916031 <br> Batch : 2019 | Session : 2020-21</span></td>
+                    <td id="univesity_info"><a href="http://ptsnsuniversity.ac.in/"><img src="../images/logo-small.png" id="logo" ></a>
+                        <br><img src="../images/contact.png" style="width: 15px; height: 15px; margin-top: 6px;"> &nbsp; (+91)-76522 40917
+                        <br><img src="../images/email.png" style="width: 20px; height: 15px; margin-top: 6px;"> &nbsp; <a href="ptsnsuniversity@gmail.com" style="color: white;">ptsnsuniversity@gmail.com</a>
+                        <br><img src="../images/location.png" style="width: 15px; height: 18px; margin-top: 6px;"> &nbsp; Shahdol, Madhya Pradesh India
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
