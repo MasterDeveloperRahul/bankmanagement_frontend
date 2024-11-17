@@ -6,6 +6,16 @@
         </title>
         <link rel="stylesheet" href="../style/bank_login_panel.css">
         <script>
+
+            //for clear value of url like x and y 
+
+            window.onload = function () {
+                if (window.location.search) {
+                    history.replaceState(null, "", window.location.pathname);
+                }
+            };
+
+
             // Script For ID & Password Validation
             function login(){
                     var un=document.forms["bank_login"]["uname"].value;
@@ -39,7 +49,7 @@
                     <input type="password" name="pass" id="" placeholder="Password" required></div>
                     <div class="submit">
                         <!-- Submit & Cancel Button -->
-                        <button type="submit" onclick="login()">Login</button>
+                        <button type="button" onclick="login()">Login</button>
                         <button type="button" onclick="cancel()"> Cancel</button>
                     </div>
                     <br><br>
